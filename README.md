@@ -51,7 +51,8 @@ The system consists of an API service, a remote executor, an autoscaler for cont
 The user interacts with the API.
 
 The API communicates with the Executor through synchronous requests.  
-The connection is closed as soon as a job is queued or rejected.
+The connection is closed as soon as a job is queued or rejected. A job is rejected if the job queue is full (can happen with many concurrent users).
+The user is then prompted to try again later.
 
 After submission, the user can perform another request to check job status.  
 After execution finishes, the user can retrieve the output.

@@ -1,8 +1,10 @@
 # RemoteExecutor
 
 ## How to run
+I chose to use another laptop I had as the executor machine (cloud stack).
+
 Inside `/api/src/main/java/resources/application.yml`, change the base-url of the worker to whatever ip address 
-your local executor machine has on the network. The executor machine must be on the same network as the API machine!
+your executor machine has on the network. The executor machine must be on the same network as the API machine!
 
 Then, on the API machine run:
 - `docker compose up -d` (this starts up the database on your API machine)

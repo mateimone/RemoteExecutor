@@ -18,7 +18,7 @@ public class RemoteExecutionService {
     private final JobRepository repo;
     private final ContainerPool pool;
     private final ThreadPoolExecutor threadPool = new ThreadPoolExecutor(
-            8, 8,
+            10, 10,
             0L, TimeUnit.MILLISECONDS,
             new ArrayBlockingQueue<>(20)
     );

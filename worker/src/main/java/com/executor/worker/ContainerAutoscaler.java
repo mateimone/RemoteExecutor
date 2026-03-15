@@ -12,7 +12,7 @@ public class ContainerAutoscaler {
     private final double SCALE_UP_FACTOR = 2.0 / 3.0;
     private final double SCALE_DOWN_FACTOR = 1.0 / 3.0;
     private final int INITIAL_CAPACITY = 3;
-    private final int MAX_TOTAL = 20;
+    private final int MAX_TOTAL = 10;
 
     public ContainerAutoscaler(ContainerPool pool) {
         this.pool = pool;

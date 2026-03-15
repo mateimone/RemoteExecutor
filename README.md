@@ -26,7 +26,7 @@ If the job is accepted, the API returns a response containing the job identifier
 
 To check the status of a job:
 ```bash
-curl -X GET http://192.168.2.24:8080/jobs/ee72fd8a-2e79-4a58-b5eb-22df6f717932
+curl -X GET http://192.168.2.24:8080/jobs/<jobId>
 ```
 
 

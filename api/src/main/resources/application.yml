@@ -1,0 +1,22 @@
+\spring:
+#  kafka:
+#    bootstrap-servers: 192.168.2.24:9092
+#    producer:
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+#      properties:
+#        spring.json.use.type.headers: false
+#        spring.json.trusted.packages: com.executor.common
+#        spring.json.value.default.type: com.executor.common.KafkaJobEvent
+
+  datasource:
+    url: jdbc:postgresql://192.168.2.24:5432/jobsdb
+    username: jobs
+    password: jobs
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+worker:
+  base-url: http://192.168.2.31:8080

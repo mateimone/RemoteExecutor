@@ -127,9 +127,12 @@ Timeout protects against scripts that do not terminate.
 
 - request submission should be asynchronous
 - message queues should be used for persistence
-- database should act as recovery point
-- jobs in progress should be recoverable after service failure
+
+### Recoverability
+- database should act as point of recovery if executor fails
+- jobs that are queued and in progress should be recoverable after failure
 
 ### Security
 
 Currently, any user can query any job if they know its UUID. The simplest solution would be an API-key per user and user accounts.
+

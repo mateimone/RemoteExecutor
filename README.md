@@ -133,8 +133,3 @@ Timeout protects against scripts that do not terminate.
 ### Security
 
 Currently, any user can query any job if they know its UUID. The simplest solution would be an API-key per user and user accounts.
-
-Possible improvements:
-- API-key per user
-- user accounts
-- validation of job ownership
